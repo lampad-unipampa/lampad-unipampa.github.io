@@ -213,11 +213,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .partner-title { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 1rem; }
 .chips { display: flex; flex-wrap: wrap; gap: .6rem; }
 .chip {
+  display: inline-block; text-decoration: none;
   font-size: .9rem; font-weight: 500; padding: .5rem .9rem; border-radius: 999px;
   background: #fff; border: 1px solid var(--line); color: var(--ink);
   transition: border-color .15s ease, color .15s ease, transform .15s ease;
   cursor: default;
 }
+a.chip { cursor: pointer; }
 .chip:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 .chips-soft .chip { background: transparent; color: var(--muted); }
 
