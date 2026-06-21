@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaMPAD · Laboratório Multiusuário de Processamento de Alto Desempenho</title>
+  <meta name="description" content="Laboratório Multiusuário de Processamento de Alto Desempenho da Unipampa. Infraestrutura de computação de alto desempenho para pesquisa, registrada no PNIPE." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LaMPAD · Processamento de Alto Desempenho" />
+  <meta property="og:description" content="Infraestrutura de computação de alto desempenho para pesquisa na Unipampa." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="LaMPAD · início">
+        <svg class="brand-mark" width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <rect width="40" height="40" rx="11" fill="#2563EB" />
+          <g fill="#ffffff">
+            <circle cx="11" cy="11" r="2.1" opacity="0.55" />
+            <circle cx="20" cy="11" r="2.1" opacity="0.55" />
+            <circle cx="29" cy="11" r="2.6" fill="#7DE3FF" />
+            <circle cx="11" cy="20" r="2.6" fill="#7DE3FF" />
+            <circle cx="20" cy="20" r="2.1" opacity="0.55" />
+            <circle cx="29" cy="20" r="2.1" opacity="0.55" />
+            <circle cx="11" cy="29" r="2.1" opacity="0.55" />
+            <circle cx="20" cy="29" r="2.6" fill="#7DE3FF" />
+            <circle cx="29" cy="29" r="2.1" opacity="0.55" />
+          </g>
+          <path d="M29 11 L11 20 L20 29" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9" />
+        </svg>
+        <span class="brand-word">LaMPAD</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+          <li><a href="#infraestrutura" data-i18n="nav.infra">Infraestrutura</a></li>
+          <li><a href="#agendamento" data-i18n="nav.scheduling">Agendamento</a></li>
+          <li><a href="#parceiros" data-i18n="nav.partners">Parceiros</a></li>
+          <li><a href="#comite" data-i18n="nav.committee">Comitê</a></li>
+          <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Idioma / Language / Idioma">
+          <button data-lang="pt" class="is-active" aria-pressed="true">PT</button>
+          <button data-lang="es" aria-pressed="false">ES</button>
+          <button data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-primary btn-sm" href="#agendamento" data-i18n="nav.cta">Agendar uso</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Unipampa · Registrado no PNIPE</p>
+          <h1 class="hero-title" data-i18n="hero.title">Processamento de alto desempenho na fronteira da ciência</h1>
+          <p class="hero-sub" data-i18n="hero.sub">O Laboratório Multiusuário de Processamento de Alto Desempenho coloca GPUs e clusters de computação à disposição de pesquisadores da Unipampa e de seus parceiros.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#agendamento" data-i18n="hero.cta1">Agendar uso →</a>
+            <a class="btn btn-ghost" href="#infraestrutura" data-i18n="hero.cta2">Ver infraestrutura</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt class="mono">RTX 5090</dt><dd data-i18n="hero.stat1">GPU de topo de linha</dd></div>
+            <div><dt class="mono">23</dt><dd data-i18n="hero.stat2">nós de computação</dd></div>
+            <div><dt class="mono">6</dt><dd data-i18n="hero.stat3">workstations com GPU</dd></div>
+          </dl>
+        </div>
+
+        <figure class="hero-grid" aria-hidden="true">
+          <div class="grid-nodes" id="grid-nodes"></div>
+          <figcaption class="grid-legend mono">
+            <span><i class="dot dot-gpu"></i><span data-i18n="hero.legend_gpu">GPU</span></span>
+            <span><i class="dot dot-cpu"></i><span data-i18n="hero.legend_cpu">CPU</span></span>
+            <span><i class="dot dot-live"></i><span data-i18n="hero.legend_live">em uso</span></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section" id="sobre">
+      <div class="container section-grid">
+        <div class="section-head">
+          <p class="eyebrow mono" data-i18n="about.eyebrow">01 · O laboratório</p>
+          <h2 data-i18n="about.title">Um recurso compartilhado para a pesquisa</h2>
+        </div>
+        <div class="section-body">
+          <p data-i18n="about.p1">O LaMPAD é um laboratório multiusuário que concentra capacidade de computação de alto desempenho em um único ponto de acesso. Em vez de equipamentos isolados em cada grupo, a infraestrutura é gerida de forma coletiva, agendada e aberta à comunidade científica.</p>
+          <p data-i18n="about.p2">O laboratório é cadastrado no PNIPE, a Plataforma Nacional de Infraestrutura de Pesquisa, o que dá visibilidade e governança ao uso dos recursos por pesquisadores de diferentes programas e instituições.</p>
+          <ul class="feature-list">
+            <li><strong data-i18n="about.f1t">Multiusuário.</strong> <span data-i18n="about.f1d">Acesso compartilhado e agendado entre grupos e programas de pós-graduação.</span></li>
+            <li><strong data-i18n="about.f2t">Governança.</strong> <span data-i18n="about.f2d">Comitê gestor e comitê assessor definem prioridades e políticas de uso.</span></li>
+            <li><strong data-i18n="about.f3t">Colaborativo.</strong> <span data-i18n="about.f3d">Rede de parceiros nacionais e internacionais em torno da infraestrutura.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INFRAESTRUTURA ===================== -->
+    <section class="section section-alt" id="infraestrutura">
+      <div class="container">
+        <div class="section-head wide">
+          <p class="eyebrow mono" data-i18n="infra.eyebrow">02 · Infraestrutura</p>
+          <h2 data-i18n="infra.title">Três grids de computação</h2>
+          <p class="section-lead" data-i18n="infra.lead">A capacidade está organizada em grids complementares: estações com GPUs modernas para cargas de aceleração e servidores para processamento paralelo em CPU.</p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card grid-card">
+            <header class="grid-card-head">
+              <span class="grid-tag mono">Grid 01</span>
+              <h3 data-i18n="infra.g1">Workstations com GPU</h3>
+            </header>
+            <ul class="spec-list mono">
+              <li><span class="spec-q">1×</span> RTX 5090 · 32GB VRAM · 96GB DDR5</li>
+              <li><span class="spec-q">2×</span> RTX 5080 · 16GB VRAM · 64GB DDR5</li>
+              <li><span class="spec-q">2×</span> RTX 3060 · 8GB VRAM · 64GB DDR4</li>
+              <li><span class="spec-q">1×</span> RTX 3060 · 8GB VRAM · 128GB DDR4</li>
+            </ul>
+            <p class="grid-card-note" data-i18n="infra.g1note">Aceleração para IA, simulação e renderização.</p>
+          </article>
+
+          <article class="card grid-card">
+            <header class="grid-card-head">
+              <span class="grid-tag mono">Grid 02</span>
+              <h3 data-i18n="infra.g2">Servidores i7 · 9ª geração</h3>
+            </header>
+            <ul class="spec-list mono">
+              <li><span class="spec-q">10×</span> Intel Core i7-9700</li>
+              <li>@ 3.00GHz · 8 núcleos</li>
+              <li>32GB RAM <span data-i18n="infra.each">cada</span></li>
+            </ul>
+            <p class="grid-card-note" data-i18n="infra.g2note">Processamento paralelo e jobs em lote.</p>
+          </article>
+
+          <article class="card grid-card">
+            <header class="grid-card-head">
+              <span class="grid-tag mono">Grid 03</span>
+              <h3 data-i18n="infra.g3">Servidores i7 · 7ª geração</h3>
+            </header>
+            <ul class="spec-list mono">
+              <li><span class="spec-q">7×</span> Intel Core i7-7700</li>
+              <li>@ 3.60GHz · 4 núcleos</li>
+              <li>32GB RAM <span data-i18n="infra.each">cada</span></li>
+            </ul>
+            <p class="grid-card-note" data-i18n="infra.g3note">Experimentos distribuídos e serviços do laboratório.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AGENDAMENTO ===================== -->
+    <section class="section" id="agendamento">
+      <div class="container cta-band">
+        <div class="cta-band-copy">
+          <p class="eyebrow mono" data-i18n="sched.eyebrow">03 · Agendamento</p>
+          <h2 data-i18n="sched.title">Reserve os recursos do laboratório</h2>
+          <p data-i18n="sched.p">O uso é organizado por agendamento. Consulte a disponibilidade no calendário público e solicite sua reserva por e-mail, indicando o período, o grid desejado e uma breve descrição do trabalho.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a class="btn btn-primary" href="mailto:lampad@unipampa.edu.br?subject=Agendamento%20LaMPAD" data-i18n="sched.cta1">Solicitar agendamento</a>
+          <a class="btn btn-ghost" href="#" data-cal-link data-i18n="sched.cta2">Ver calendário público</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARCEIROS ===================== -->
+    <section class="section section-alt" id="parceiros">
+      <div class="container">
+        <div class="section-head wide">
+          <p class="eyebrow mono" data-i18n="part.eyebrow">04 · Parceiros</p>
+          <h2 data-i18n="part.title">Uma rede em torno da infraestrutura</h2>
+          <p class="section-lead" data-i18n="part.lead">Programas de pós-graduação, grupos de pesquisa e colaboradores externos sustentam e utilizam o laboratório.</p>
+        </div>
+
+        <div class="partners">
+          <div class="partner-group">
+            <h3 class="partner-title mono" data-i18n="part.ppg">Programas de pós-graduação</h3>
+            <ul class="chips">
+              <li class="chip" title="Engenharia de Software">PPGES</li>
+              <li class="chip" title="Engenharia Elétrica">PPGEE</li>
+              <li class="chip" title="Engenharia">PPGEng</li>
+              <li class="chip" title="Computação Aplicada">PPGCAP</li>
+            </ul>
+          </div>
+
+          <div class="partner-group">
+            <h3 class="partner-title mono" data-i18n="part.groups">Grupos de pesquisa</h3>
+            <ul class="chips">
+              <li class="chip">AI Horizon Labs</li>
+              <li class="chip" title="Arquitetura de Computadores e Microeletrônica">GAMA</li>
+              <li class="chip" title="Laboratório de Estudos Avançados">LEA</li>
+              <li class="chip" title="Estudos Empíricos em Engenharia de Software">LESSE</li>
+              <li class="chip" title="Laboratório de Otimização de Sistemas">LOS</li>
+              <li class="chip" title="Núcleo de Pesquisa em Pecuária de Precisão">NP3</li>
+              <li class="chip" title="Centro de Tecnologia do Agronegócio">CTA</li>
+            </ul>
+          </div>
+
+          <div class="partner-group">
+            <h3 class="partner-title mono" data-i18n="part.ext">Colaboradores externos</h3>
+            <ul class="chips chips-soft">
+              <li class="chip">ITA</li>
+              <li class="chip">UNISINOS</li>
+              <li class="chip">UFAM</li>
+              <li class="chip">UFU</li>
+              <li class="chip">Max Planck Institute</li>
+              <li class="chip">UFRN</li>
+              <li class="chip">UFRGS</li>
+              <li class="chip">Universidad de Antioquia</li>
+            </ul>
+          </div>
+
+          <div class="partner-group">
+            <h3 class="partner-title mono" data-i18n="part.eco">Ecossistema de inovação</h3>
+            <ul class="chips">
+              <li class="chip" title="Parque Científico e Tecnológico do Pampa">PampaTec</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMITÊ ===================== -->
+    <section class="section" id="comite">
+      <div class="container">
+        <div class="section-head wide">
+          <p class="eyebrow mono" data-i18n="com.eyebrow">05 · Gestão</p>
+          <h2 data-i18n="com.title">Comitês gestor e assessor</h2>
+          <p class="section-lead" data-i18n="com.lead">A operação do laboratório é conduzida por um comitê gestor, apoiado por um comitê assessor com representantes dos grupos de pesquisa.</p>
+        </div>
+
+        <h3 class="people-heading mono" data-i18n="com.manage">Comitê Gestor</h3>
+        <ul class="people">
+          <li class="person"><span class="person-name">Rodrigo Brandão Mansilha</span><span class="person-role" data-i18n="com.r_coord">Coordenador</span></li>
+          <li class="person"><span class="person-name">Diego Kreutz</span><span class="person-role" data-i18n="com.r_vice">Vice-Coordenador</span></li>
+          <li class="person"><span class="person-name">Gilleanes T. A. Guedes</span><span class="person-role">PPGES</span></li>
+          <li class="person"><span class="person-name">Chiara Valsecchi</span><span class="person-role">PPGEng</span></li>
+          <li class="person"><span class="person-name">Felipe Bovolini Grigoletto</span><span class="person-role">PPGEE</span></li>
+          <li class="person"><span class="person-name">Natalia Braun Chagas</span><span class="person-role" data-i18n="com.r_acad">Coordenação Acadêmica</span></li>
+          <li class="person"><span class="person-name">Julio César de Carvalho Lopes</span><span class="person-role">STIC</span></li>
+        </ul>
+
+        <h3 class="people-heading mono" data-i18n="com.advise">Comitê Assessor</h3>
+        <ul class="people">
+          <li class="person"><span class="person-name">Alessandro G. Girardi</span><span class="person-role">GAMA</span></li>
+          <li class="person"><span class="person-name">Claudio Schepke</span><span class="person-role">CLP · LEA</span></li>
+          <li class="person"><span class="person-name">Elder de Macedo Rodrigues</span><span class="person-role">CTA</span></li>
+          <li class="person"><span class="person-name">Maicon Bernardino da Silveira</span><span class="person-role">LESSE</span></li>
+          <li class="person"><span class="person-name">Marcelo Caggiani Luizelli</span><span class="person-role">LOS</span></li>
+          <li class="person"><span class="person-name">Silvio E. Quincozes</span><span class="person-role">AI Horizon Labs</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section section-alt" id="contato">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow mono" data-i18n="contact.eyebrow">06 · Contato</p>
+          <h2 data-i18n="contact.title">Fale com o laboratório</h2>
+          <p class="section-lead" data-i18n="contact.lead">Dúvidas sobre acesso, parcerias ou uso da infraestrutura? Escreva para a coordenação.</p>
+        </div>
+        <a class="contact-mail mono" href="mailto:lampad@unipampa.edu.br">lampad@unipampa.edu.br</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-word">LaMPAD</span>
+        <p data-i18n="footer.tag">Laboratório Multiusuário de Processamento de Alto Desempenho · Universidade Federal do Pampa</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#infraestrutura" data-i18n="nav.infra">Infraestrutura</a>
+        <a href="#agendamento" data-i18n="nav.scheduling">Agendamento</a>
+        <a href="#parceiros" data-i18n="nav.partners">Parceiros</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p class="mono">© <span id="year"></span> LaMPAD · Unipampa</p>
+      <p class="footer-credit mono">
+        <span data-i18n="footer.credit">Desenvolvido pelo</span>
+        <a href="https://sites.unipampa.edu.br/lampad/" data-ai-horizon target="_blank" rel="noopener">AI Horizon Labs</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
