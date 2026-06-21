@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" fill="none" role="img" aria-label="Workstation com placa de vídeo GPU">
+  <!-- PCB / board -->
+  <rect x="26" y="44" width="308" height="84" rx="9" fill="#f6f8fb" stroke="#0b1220" stroke-width="2"/>
+  <!-- top shroud -->
+  <path d="M26 53a9 9 0 0 1 9-9h290a9 9 0 0 1 9 9v9H26z" fill="#eef2f7" stroke="#0b1220" stroke-width="2"/>
+  <!-- backplate bracket -->
+  <rect x="20" y="40" width="8" height="96" rx="2" fill="#eef2f7" stroke="#0b1220" stroke-width="2"/>
+  <!-- PCIe gold fingers -->
+  <g stroke="#0b1220" stroke-width="2">
+    <rect x="64" y="128" width="120" height="14" fill="#fff"/>
+    <path d="M76 128v14M92 128v14M108 128v14M124 128v14M140 128v14M156 128v14M172 128v14"/>
+  </g>
+  <!-- fan 1 -->
+  <g transform="translate(112 90)">
+    <circle r="31" fill="#ffffff" stroke="#0b1220" stroke-width="2"/>
+    <g fill="#eef2f7" stroke="#2563eb" stroke-width="1.4">
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(60)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(120)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(180)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(240)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(300)"/>
+    </g>
+    <circle r="5" fill="#2563eb"/>
+  </g>
+  <!-- fan 2 -->
+  <g transform="translate(248 90)">
+    <circle r="31" fill="#ffffff" stroke="#0b1220" stroke-width="2"/>
+    <g fill="#eef2f7" stroke="#2563eb" stroke-width="1.4">
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(60)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(120)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(180)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(240)"/>
+      <path d="M0,-5 C7,-9 10,-20 2,-25 C-1,-18 -3,-11 0,-5 Z" transform="rotate(300)"/>
+    </g>
+    <circle r="5" fill="#2563eb"/>
+  </g>
+  <!-- power connector -->
+  <rect x="300" y="50" width="24" height="12" rx="2" fill="#fff" stroke="#0b1220" stroke-width="2"/>
+</svg>

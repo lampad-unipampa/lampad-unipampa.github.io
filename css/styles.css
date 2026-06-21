@@ -187,7 +187,14 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* ----------------------- Cards ------------------------- */
 .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .card { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow); }
-.grid-card { display: flex; flex-direction: column; }
+.grid-card { display: flex; flex-direction: column; overflow: hidden; }
+.grid-card-figure {
+  margin: -1.6rem -1.6rem 1.3rem;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(180deg, var(--bg-alt), #fff);
+  border-bottom: 1px solid var(--line-soft);
+}
+.grid-card-figure img { display: block; width: 100%; height: auto; }
 .grid-card-head { margin-bottom: 1.1rem; }
 .grid-tag { display: inline-block; font-size: .72rem; color: var(--accent); background: #eef4ff; border: 1px solid #dbe7ff; padding: .15rem .5rem; border-radius: 6px; margin-bottom: .7rem; }
 .grid-card h3 { font-size: 1.2rem; }
@@ -230,6 +237,8 @@ a.chip { cursor: pointer; }
 .person { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.1rem; transition: border-color .15s ease, transform .15s ease; }
 .person:hover { border-color: var(--accent); transform: translateY(-2px); }
 .person-name { display: block; font-weight: 600; }
+a.person-name { transition: color .15s ease; }
+a.person-name:hover { color: var(--accent); }
 .person-role { display: block; color: var(--muted); font-size: .85rem; margin-top: .15rem; font-family: var(--font-mono); }
 
 /* ----------------------- Contato ----------------------- */

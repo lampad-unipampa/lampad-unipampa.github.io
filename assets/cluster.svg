@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" fill="none" role="img" aria-label="Mini-cluster de servidores em rack">
+  <!-- rack frame -->
+  <rect x="78" y="18" width="204" height="124" rx="10" fill="#f6f8fb" stroke="#0b1220" stroke-width="2"/>
+  <!-- server units -->
+  <g>
+    <!-- unit template repeated at 4 heights -->
+    <g transform="translate(0 0)">
+      <rect x="90" y="30" width="180" height="20" rx="4" fill="#ffffff" stroke="#0b1220" stroke-width="2"/>
+      <circle cx="102" cy="40" r="3" fill="#2563eb"/>
+      <circle cx="113" cy="40" r="3" fill="#06b6d4"/>
+      <rect x="150" y="36" width="40" height="8" rx="2" fill="#eef2f7" stroke="#0b1220" stroke-width="1.4"/>
+      <path d="M210 36v8M218 36v8M226 36v8M234 36v8M242 36v8M250 36v8" stroke="#0b1220" stroke-width="1.4"/>
+    </g>
+    <g transform="translate(0 26)">
+      <rect x="90" y="30" width="180" height="20" rx="4" fill="#ffffff" stroke="#0b1220" stroke-width="2"/>
+      <circle cx="102" cy="40" r="3" fill="#2563eb"/>
+      <circle cx="113" cy="40" r="3" fill="#06b6d4"/>
+      <rect x="150" y="36" width="40" height="8" rx="2" fill="#eef2f7" stroke="#0b1220" stroke-width="1.4"/>
+      <path d="M210 36v8M218 36v8M226 36v8M234 36v8M242 36v8M250 36v8" stroke="#0b1220" stroke-width="1.4"/>
+    </g>
+    <g transform="translate(0 52)">
+      <rect x="90" y="30" width="180" height="20" rx="4" fill="#ffffff" stroke="#0b1220" stroke-width="2"/>
+      <circle cx="102" cy="40" r="3" fill="#2563eb"/>
+      <circle cx="113" cy="40" r="3" fill="#06b6d4"/>
+      <rect x="150" y="36" width="40" height="8" rx="2" fill="#eef2f7" stroke="#0b1220" stroke-width="1.4"/>
+      <path d="M210 36v8M218 36v8M226 36v8M234 36v8M242 36v8M250 36v8" stroke="#0b1220" stroke-width="1.4"/>
+    </g>
+    <g transform="translate(0 78)">
+      <rect x="90" y="30" width="180" height="20" rx="4" fill="#ffffff" stroke="#0b1220" stroke-width="2"/>
+      <circle cx="102" cy="40" r="3" fill="#2563eb"/>
+      <circle cx="113" cy="40" r="3" fill="#06b6d4"/>
+      <rect x="150" y="36" width="40" height="8" rx="2" fill="#eef2f7" stroke="#0b1220" stroke-width="1.4"/>
+      <path d="M210 36v8M218 36v8M226 36v8M234 36v8M242 36v8M250 36v8" stroke="#0b1220" stroke-width="1.4"/>
+    </g>
+  </g>
+</svg>
