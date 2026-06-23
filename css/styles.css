@@ -215,20 +215,45 @@ ul { margin: 0; padding: 0; list-style: none; }
 .cta-band .btn-ghost { color: #fff; border-color: rgba(255,255,255,.28); }
 .cta-band .btn-ghost:hover { border-color: #fff; color: #fff; background: rgba(255,255,255,.08); }
 
+/* --------------------- Inline calendar ----------------- */
+.cal-wrap { margin-top: 2.5rem; }
+.cal-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: .75rem; margin-bottom: 1rem;
+}
+.cal-title { font-size: 1.15rem; }
+.cal-open { font-size: .82rem; color: var(--accent); text-decoration: none; }
+.cal-open:hover { text-decoration: underline; }
+.cal-embed {
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  background: var(--bg); box-shadow: var(--shadow);
+}
+.cal-embed iframe { display: block; width: 100%; height: 620px; }
+@media (max-width: 640px) { .cal-embed iframe { height: 500px; } }
+
 /* ----------------------- Partners ---------------------- */
 .partners { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem 3rem; }
 .partner-title { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 1rem; }
-.chips { display: flex; flex-wrap: wrap; gap: .6rem; }
-.chip {
-  display: inline-block; text-decoration: none;
-  font-size: .9rem; font-weight: 500; padding: .5rem .9rem; border-radius: 999px;
-  background: #fff; border: 1px solid var(--line); color: var(--ink);
-  transition: border-color .15s ease, color .15s ease, transform .15s ease;
-  cursor: default;
+/* Logo wall: logos coloridas em cartões, com fallback de texto */
+.logo-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .9rem;
 }
-a.chip { cursor: pointer; }
-.chip:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
-.chips-soft .chip { background: transparent; color: var(--muted); }
+.logo-card {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: .55rem; text-decoration: none; text-align: center;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: 1.1rem .9rem; min-height: 116px;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+.logo-card:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-2px); }
+.logo-img {
+  display: block; max-width: 100%; height: 48px; object-fit: contain;
+}
+.logo-cap { font-size: .82rem; font-weight: 500; color: var(--muted); line-height: 1.2; }
+/* Sem logo disponível: esconde a imagem quebrada e destaca o texto */
+.logo-card.no-logo .logo-img { display: none; }
+.logo-card.no-logo { justify-content: center; }
+.logo-card.no-logo .logo-cap { font-size: 1rem; font-weight: 600; color: var(--ink); }
 
 /* ----------------------- People ------------------------ */
 .people-heading { font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); margin: 0 0 1.1rem; }

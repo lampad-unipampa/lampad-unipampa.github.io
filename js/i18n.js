@@ -55,7 +55,9 @@
       "sched.title": "Reserve os recursos do laboratório",
       "sched.p": "O uso é organizado por agendamento. Consulte a disponibilidade no calendário público e solicite sua reserva por e-mail, indicando o período, o grid desejado e uma breve descrição do trabalho.",
       "sched.cta1": "Solicitar agendamento",
-      "sched.cta2": "Ver calendário público",
+      "sched.cta2": "Abrir no Google Agenda ↗",
+      "sched.cta3": "Preencher formulário",
+      "sched.cal_title": "Agenda pública do laboratório",
 
       "part.eyebrow": "04 · Parceiros",
       "part.title": "Uma rede em torno da infraestrutura",
@@ -130,7 +132,9 @@
       "sched.title": "Reserva los recursos del laboratorio",
       "sched.p": "El uso se organiza por reservas. Consulta la disponibilidad en el calendario público y solicita tu reserva por correo, indicando el período, el grid deseado y una breve descripción del trabajo.",
       "sched.cta1": "Solicitar reserva",
-      "sched.cta2": "Ver calendario público",
+      "sched.cta2": "Abrir en Google Calendar ↗",
+      "sched.cta3": "Completar formulario",
+      "sched.cal_title": "Agenda pública del laboratorio",
 
       "part.eyebrow": "04 · Socios",
       "part.title": "Una red en torno a la infraestructura",
@@ -205,7 +209,9 @@
       "sched.title": "Reserve the lab's resources",
       "sched.p": "Usage is organized by scheduling. Check availability on the public calendar and request your reservation by email, stating the time window, the grid you need and a short description of the work.",
       "sched.cta1": "Request a slot",
-      "sched.cta2": "Open public calendar",
+      "sched.cta2": "Open in Google Calendar ↗",
+      "sched.cta3": "Fill out the form",
+      "sched.cal_title": "Lab public calendar",
 
       "part.eyebrow": "04 · Partners",
       "part.title": "A network around the infrastructure",

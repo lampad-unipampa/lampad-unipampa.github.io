@@ -192,7 +192,20 @@
         </div>
         <div class="cta-band-actions">
           <a class="btn btn-primary" href="mailto:lampad@unipampa.edu.br?subject=Agendamento%20LaMPAD" data-i18n="sched.cta1">Solicitar agendamento</a>
-          <a class="btn btn-ghost" href="#" data-cal-link data-i18n="sched.cta2">Ver calendário público</a>
+          <a class="btn btn-ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSe0Wi1XNZ9EnTZssvf5v24El7QNmiDbKvrljeNq6dRm5tyTXQ/viewform" target="_blank" rel="noopener" data-i18n="sched.cta3">Preencher formulário</a>
+        </div>
+      </div>
+
+      <div class="container cal-wrap">
+        <div class="cal-head">
+          <h3 class="cal-title" data-i18n="sched.cal_title">Agenda pública do laboratório</h3>
+          <a class="cal-open mono" href="#" data-cal-link target="_blank" rel="noopener" data-i18n="sched.cta2">Abrir no Google Agenda ↗</a>
+        </div>
+        <div class="cal-embed">
+          <iframe
+            title="Agenda pública do LaMPAD"
+            src="https://calendar.google.com/calendar/embed?src=c_a8b5f9e592f4fd435c8aee69065999e612ea89b9717297066bba9cb456927a4a%40group.calendar.google.com&ctz=America%2FSao_Paulo&mode=MONTH&showTitle=0&showPrint=0&showCalendars=0&showTz=0"
+            style="border:0" frameborder="0" scrolling="no" loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -209,45 +222,81 @@
         <div class="partners">
           <div class="partner-group">
             <h3 class="partner-title mono" data-i18n="part.ppg">Programas de pós-graduação</h3>
-            <ul class="chips">
-              <li><a class="chip" href="https://cursos.unipampa.edu.br/cursos/ppges/" target="_blank" rel="noopener" title="Engenharia de Software">PPGES</a></li>
-              <li><a class="chip" href="https://cursos.unipampa.edu.br/cursos/ppgee/" target="_blank" rel="noopener" title="Engenharia Elétrica">PPGEE</a></li>
-              <li><a class="chip" href="https://cursos.unipampa.edu.br/cursos/ppeng/" target="_blank" rel="noopener" title="Engenharia">PPGEng</a></li>
-              <li><a class="chip" href="https://cursos.unipampa.edu.br/cursos/ppgcap/" target="_blank" rel="noopener" title="Computação Aplicada">PPGCAP</a></li>
+            <ul class="logo-grid">
+              <li><a class="logo-card" href="https://cursos.unipampa.edu.br/cursos/ppges/" target="_blank" rel="noopener" title="Engenharia de Software">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="PPGES · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">PPGES</span></a></li>
+              <li><a class="logo-card" href="https://cursos.unipampa.edu.br/cursos/ppgee/" target="_blank" rel="noopener" title="Engenharia Elétrica">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="PPGEE · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">PPGEE</span></a></li>
+              <li><a class="logo-card" href="https://cursos.unipampa.edu.br/cursos/ppeng/" target="_blank" rel="noopener" title="Engenharia">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="PPGEng · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">PPGEng</span></a></li>
+              <li><a class="logo-card" href="https://cursos.unipampa.edu.br/cursos/ppgcap/" target="_blank" rel="noopener" title="Computação Aplicada">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="PPGCAP · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">PPGCAP</span></a></li>
             </ul>
           </div>
 
           <div class="partner-group">
             <h3 class="partner-title mono" data-i18n="part.groups">Grupos de pesquisa</h3>
-            <ul class="chips">
-              <li><a class="chip" href="https://ai-horizon-labs.github.io" target="_blank" rel="noopener">AI Horizon Labs</a></li>
-              <li><a class="chip" href="https://sites.unipampa.edu.br/gama/" target="_blank" rel="noopener" title="Arquitetura de Computadores e Microeletrônica">GAMA</a></li>
-              <li><a class="chip" href="https://sites.unipampa.edu.br/lea/" target="_blank" rel="noopener" title="Laboratório de Estudos Avançados">LEA</a></li>
-              <li><a class="chip" href="https://lesse.com.br/site/" target="_blank" rel="noopener" title="Estudos Empíricos em Engenharia de Software">LESSE</a></li>
-              <li><a class="chip" href="https://lospampa.com" target="_blank" rel="noopener" title="Laboratório de Otimização de Sistemas">LOS</a></li>
-              <li><a class="chip" href="https://sites.unipampa.edu.br/np3/" target="_blank" rel="noopener" title="Núcleo de Pesquisa em Pecuária de Precisão">NP3</a></li>
-              <li><a class="chip" href="https://cursos.unipampa.edu.br/cursos/engenhariadesoftware/?page_id=2090" target="_blank" rel="noopener" title="Centro de Tecnologia do Agronegócio">CTA</a></li>
+            <ul class="logo-grid">
+              <li><a class="logo-card no-logo" href="https://ai-horizon-labs.github.io" target="_blank" rel="noopener" title="AI Horizon Labs">
+                <span class="logo-cap">AI Horizon Labs</span></a></li>
+              <li><a class="logo-card" href="https://sites.unipampa.edu.br/gama/" target="_blank" rel="noopener" title="Arquitetura de Computadores e Microeletrônica">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="GAMA · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">GAMA</span></a></li>
+              <li><a class="logo-card" href="https://sites.unipampa.edu.br/lea/" target="_blank" rel="noopener" title="Laboratório de Estudos Avançados">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="LEA · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">LEA</span></a></li>
+              <li><a class="logo-card no-logo" href="https://lesse.com.br/site/" target="_blank" rel="noopener" title="Estudos Empíricos em Engenharia de Software">
+                <span class="logo-cap">LESSE</span></a></li>
+              <li><a class="logo-card no-logo" href="https://lospampa.com" target="_blank" rel="noopener" title="Laboratório de Otimização de Sistemas">
+                <span class="logo-cap">LOS</span></a></li>
+              <li><a class="logo-card" href="https://sites.unipampa.edu.br/np3/" target="_blank" rel="noopener" title="Núcleo de Pesquisa em Pecuária de Precisão">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="NP3 · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">NP3</span></a></li>
+              <li><a class="logo-card" href="https://cursos.unipampa.edu.br/cursos/engenhariadesoftware/?page_id=2090" target="_blank" rel="noopener" title="Centro de Tecnologia do Agronegócio">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="CTA · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">CTA</span></a></li>
             </ul>
           </div>
 
           <div class="partner-group">
             <h3 class="partner-title mono" data-i18n="part.ext">Colaboradores externos</h3>
-            <ul class="chips chips-soft">
-              <li><a class="chip" href="https://www.ita.br" target="_blank" rel="noopener">ITA</a></li>
-              <li><a class="chip" href="https://www.unisinos.br" target="_blank" rel="noopener">UNISINOS</a></li>
-              <li><a class="chip" href="https://www.ufam.edu.br" target="_blank" rel="noopener">UFAM</a></li>
-              <li><a class="chip" href="https://ufu.br" target="_blank" rel="noopener">UFU</a></li>
-              <li><a class="chip" href="https://www.mpg.de" target="_blank" rel="noopener">Max Planck Institute</a></li>
-              <li><a class="chip" href="https://www.ufrn.br" target="_blank" rel="noopener">UFRN</a></li>
-              <li><a class="chip" href="https://www.ufrgs.br" target="_blank" rel="noopener">UFRGS</a></li>
-              <li><a class="chip" href="https://www.udea.edu.co" target="_blank" rel="noopener">Universidad de Antioquia</a></li>
+            <ul class="logo-grid">
+              <li><a class="logo-card no-logo" href="https://www.ita.br" target="_blank" rel="noopener" title="Instituto Tecnológico de Aeronáutica">
+                <span class="logo-cap">ITA</span></a></li>
+              <li><a class="logo-card" href="https://www.unisinos.br" target="_blank" rel="noopener" title="Universidade do Vale do Rio dos Sinos">
+                <img class="logo-img" src="assets/logos/unisinos.png" alt="UNISINOS" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">UNISINOS</span></a></li>
+              <li><a class="logo-card" href="https://www.ufam.edu.br" target="_blank" rel="noopener" title="Universidade Federal do Amazonas">
+                <img class="logo-img" src="assets/logos/ufam.jpg" alt="UFAM" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">UFAM</span></a></li>
+              <li><a class="logo-card" href="https://ufu.br" target="_blank" rel="noopener" title="Universidade Federal de Uberlândia">
+                <img class="logo-img" src="assets/logos/ufu.svg" alt="UFU" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">UFU</span></a></li>
+              <li><a class="logo-card" href="https://www.mpg.de" target="_blank" rel="noopener" title="Max Planck Institute">
+                <img class="logo-img" src="assets/logos/mpg.png" alt="Max Planck Institute" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">Max Planck</span></a></li>
+              <li><a class="logo-card" href="https://www.ufrn.br" target="_blank" rel="noopener" title="Universidade Federal do Rio Grande do Norte">
+                <img class="logo-img" src="assets/logos/ufrn.png" alt="UFRN" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">UFRN</span></a></li>
+              <li><a class="logo-card" href="https://www.ufrgs.br" target="_blank" rel="noopener" title="Universidade Federal do Rio Grande do Sul">
+                <img class="logo-img" src="assets/logos/ufrgs.svg" alt="UFRGS" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">UFRGS</span></a></li>
+              <li><a class="logo-card" href="https://www.udea.edu.co" target="_blank" rel="noopener" title="Universidad de Antioquia">
+                <img class="logo-img" src="assets/logos/udea.svg" alt="Universidad de Antioquia" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">U. de Antioquia</span></a></li>
             </ul>
           </div>
 
           <div class="partner-group">
             <h3 class="partner-title mono" data-i18n="part.eco">Ecossistema de inovação</h3>
-            <ul class="chips">
-              <li><a class="chip" href="https://sites.unipampa.edu.br/pampatec/" target="_blank" rel="noopener" title="Parque Científico e Tecnológico do Pampa">PampaTec</a></li>
+            <ul class="logo-grid">
+              <li><a class="logo-card" href="https://sites.unipampa.edu.br/pampatec/" target="_blank" rel="noopener" title="Parque Científico e Tecnológico do Pampa">
+                <img class="logo-img" src="assets/logos/unipampa.jpg" alt="PampaTec · Unipampa" loading="lazy" onerror="this.closest('.logo-card').classList.add('no-logo')">
+                <span class="logo-cap">PampaTec</span></a></li>
             </ul>
           </div>
         </div>

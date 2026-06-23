@@ -10,7 +10,7 @@
      Troque pelos links oficiais quando disponíveis. */
   var CONFIG = {
     // URL do calendário público do Google. Vazio = usa e-mail.
-    publicCalendarUrl: "",
+    publicCalendarUrl: "https://calendar.google.com/calendar/u/0?cid=Y19hOGI1ZjllNTkyZjRmZDQzNWM4YWVlNjkwNjU5OTllNjEyZWE4OWI5NzE3Mjk3MDY2YmJhOWNiNDU2OTI3YTRhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
     // Site do AI Horizon Labs (crédito no rodapé).
     aiHorizonUrl: "https://sites.unipampa.edu.br/lampad/"
   };
